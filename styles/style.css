@@ -100,15 +100,11 @@ nav {
 
 .dropdown {
     position: relative;
+    display: inline-block;
 }
 
 .dropbtn {
     cursor: pointer;
-    color: var(--bg-light);
-    font-size: 1.5rem;
-    font-weight: 500;
-    font-family: "Poppins", "sans-serif";
-    transition: color 0.2s ease;
 }
 
 .dropbtn:hover {
@@ -116,12 +112,12 @@ nav {
 }
 
 .dropdown-content {
+    display: none;
     position: absolute;
-    top: 2.36rem;
-    left: 0%;
+    top: 100%;
     background-color: var(--navy);
-    border-radius: 8px;
-    padding: 0.5rem 0;
+    border-radius: 10px;
+    padding: 1rem;
     display: flex;
     flex-direction: column;
     min-width: 220px;
