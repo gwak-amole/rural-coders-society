@@ -1,0 +1,117 @@
+:root {
+    /* main colors */
+    --navy: #0F2A43;
+    --navy-light: #2F4964;
+
+    /* natural colors */
+    --evergreen: #2E4F3D;
+    --sage: #A9BFA8;
+    --wheat: #E9D9B6;
+
+    /* some accents */
+    --sky-accent: #6FA9DF;
+    --gold-accent: #D9B36C;
+
+    /* basics */
+    --text-main: #1F1F1F;
+    --text-light: #FFFFFF;
+    --bg-light: #F7F7F5;
+    --bg-dark: #0B1A28;
+}
+
+body {
+    background-color: var(--bg-light);
+    color: var(--text-main);
+
+    font-family: "Inter", sans-serif;
+
+    margin: 0;
+    padding: 0;
+}
+
+.site-header-container {
+    width: 100%;
+    display: block;
+    position: relative;
+}
+
+.header {
+    padding: 1rem 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: transparent;
+    transition: background-color 0.2s ease, backdrop-filter 0.2s ease;
+}
+
+.header.scrolled {
+    background-color: rgba(250, 250, 250, 0.71);
+    backdrop-filter: blur(10px);
+}
+
+.nav-a {
+    padding-right: 20px;
+    margin-right: 30px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-family: "Poppins", "sans-serif";
+    color: var(--bg-light);
+    transition: color 0.2s ease
+}
+
+.nav-a:hover {
+    color: var(--sky-accent);
+}
+
+.nav-a.scrolled{
+    color: var(--text-main)
+}
+
+.nav-a.scrolled:hover{
+    color: var(--evergreen)
+}
+
+.logo {
+    width: 8rem;
+    max-width: 100%;
+    height: auto;
+    padding: 0.5rem 1rem;
+}
+
+.hero {
+    border: none;
+    text-align: left;
+    color: var(--text-light);
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+    font-optical-sizing: auto;
+
+    height: 60vh;
+    padding: 4rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 100px;
+
+    position: relative;
+}
+
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("../media/truckee-hero.webp");
+    background-size: cover;
+    background-position: top center;
+    z-index: -1;
+}
