@@ -2,6 +2,7 @@
     /* main colors */
     --navy: #0F2A43;
     --navy-light: #2F4964;
+    --blue: rgb(22, 82, 166);
 
     /* natural colors */
     --evergreen: #2E4F3D;
@@ -10,7 +11,7 @@
 
     /* some accents */
     --sky-accent: #6FA9DF;
-    --gold-accent: #D9B36C;
+    --gold-accent: #e9bc68;
 
     /* basics */
     --text-main: #1F1F1F;
@@ -21,7 +22,7 @@
 
 body {
     background-color: var(--bg-light);
-    color: var(--text-main);
+    color: var(--navy);
 
     font-family: "Inter", sans-serif;
 
@@ -75,7 +76,7 @@ body {
 }
 
 .nav-a.scrolled:hover{
-    color: var(--evergreen)
+    color: var(--blue)
 }
 
 .logo {
@@ -114,4 +115,174 @@ body {
     background-size: cover;
     background-position: top center;
     z-index: -1;
+}
+
+.join-movement-container {
+    padding: 2rem;
+    width: 600px;
+    justify-self: center;
+}
+
+.join-movement {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    margin: 1rem;
+    border: 1px solid var(--navy-light);
+    border-radius: 15px;
+}
+
+.join-movement button {
+    width: 200px;
+    height: 60px;
+    align-self: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    background-color: var(--navy-light);
+    border: 2px solid var(--accent-gold);
+    color: var(--text-light);
+    border-radius: 15px;
+    font-weight: 700;
+    transition: transform 0.3s ease;
+}
+
+.join-movement button:hover {
+    background-color: var(--navy);
+    color: var(--text-light);
+    transform: translateY(-2px);
+    cursor: pointer;
+
+}
+
+.mission-container {
+    background-color: var(--blue);
+    padding: 6rem 2rem;
+    color: var(--text-light);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.5rem;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.hows {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 40px;
+    padding: 2rem 2rem;
+    justify-content: center;
+    justify-self: center;
+}
+
+.hows-div {
+    width: 18rem;
+    text-align: center;
+    border: 1px solid var(--navy-light);
+    border-radius: 50px;
+    padding: 3rem 1rem;
+    transition: transform 0.3s ease;
+}
+
+.hows-div:hover {
+    transform: translateY(-5px);
+}
+
+.hows-div h3 {
+    font-family: "Poppins", "sans-serif";
+}
+
+.hows-div p {
+    margin: 1.2rem;
+    font-size: 1.05rem;
+}
+.corp-part-container {
+    padding: 2rem;
+    width: 1200px;
+    justify-self: center;
+}
+
+.corp-part {
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    padding: 2rem 2rem;
+    margin: 1rem;
+    border: 1px solid var(--navy-light);
+    border-radius: 15px;
+    background-color: var(--navy);
+    color: var(--bg-light);
+}
+
+.corp-part button {
+    width: 150px;
+    height: 60px;
+    align-self: center;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    background-color: var(--bg-light);
+    border: 2px solid var(--accent-gold);
+    color: var(--navy);
+    border-radius: 15px;
+    font-weight: 700;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.corp-part button:hover {
+    background-color: var(--text-light);
+    color: var(--navy-light);
+    transform: translateY(-2px);
+    cursor: pointer;
+
+}
+
+.footer {
+    background-color: var(--blue);
+    color: var(--bg-light);
+
+    padding: 1rem 4rem;
+    padding-bottom: 1rem;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    min-height: 300px;
+}
+
+.footer-left {
+    max-width: 400px;
+    line-height: 1.6;
+}
+
+.footer h2 {
+    font-family: "Poppins", "sans-serif";
+    font-size: 2rem;
+    color: var(--gold-accent);
+}
+
+.footer p {
+    margin: 0.1rem 0;
+}
+
+.footer-link {
+    color: rgb(139, 154, 179);
+    transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+    color: var(--text-light);
+}
+
+.footer-bottom {
+    margin-top: auto;
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+}
+
+.copyright {
+    opacity: 0.85;
+    font-size: 0.9rem;
 }
