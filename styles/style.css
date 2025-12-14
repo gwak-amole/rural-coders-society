@@ -207,6 +207,11 @@ nav {
     z-index: -1;
 }
 
+#hero-h1 {
+    padding-left: 3.3rem;
+    margin-top: 1.1rem;
+}
+
 .join-movement-container {
     padding: 2rem;
     max-width: 600px;
@@ -272,6 +277,16 @@ nav {
 .mission-container {
     background-color: var(--blue);
     padding: 8rem 2.4rem;
+    color: var(--text-light);
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+
+.mission-container-program {
+    margin-top: 2rem;
+    background-color: var(--blue);
+    padding: 4rem 2.4rem;
     color: var(--text-light);
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem;
@@ -575,4 +590,83 @@ nav {
 
 #join-us-arrow {
     color: var(--gold-accent);
+}
+
+.operations {
+    padding: 1rem;
+    display: block;
+    justify-content: center;
+}
+
+.operations-div {
+    padding: 5rem 4rem;
+    margin: 1rem;
+    background-color: var(--navy);
+    color: var(--bg-light);
+    max-width: 1200px;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    border-radius: 30px;
+    gap: 20px;
+}
+
+.operations button {
+    max-width: 300px;
+    width: 100%;
+    min-width: 150px;
+    height: auto;
+    min-height: 85px;
+    align-self: center;
+    border-radius: 15px;
+    border: 0.5rem solid var(--gold-accent);
+    padding: 0.5rem 1rem;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    font-size: 1.5rem;
+
+    transition: transform 0.3s ease, border 0.3s ease;
+}
+
+.operations button:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+    border: 0.5rem solid var(--wheat);
+}
+
+.operation-item {
+    max-width: 600px;
+}
+
+.operation-item h2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 2rem;
+}
+.operation-item p {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+#operation-adventures {
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#operation-websiteinit {
+    background-color: var(--navy-light);
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#operation-cafe {
+    background-color: rgb(80, 102, 126);
+    background-image: url("");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }

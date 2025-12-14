@@ -7,12 +7,12 @@ window.addEventListener("scroll", () => {
         header.classList.add("scrolled");
         navLinks.forEach(link => link.classList.add("scrolled"));
         join.classList.add("scrolled");
-        nav_logo.src = "media/rcs-Photoroom.png"
+        nav_logo.src = "../media/rcs-Photoroom.png"
     } else {
         header.classList.remove("scrolled");
         navLinks.forEach(link => link.classList.remove("scrolled"));
         join.classList.remove("scrolled");
-        nav_logo.src = "media/rcs (1)-Photoroom.png"
+        nav_logo.src = "../media/rcs (1)-Photoroom.png"
     }
 });
 
