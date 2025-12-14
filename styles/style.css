@@ -494,7 +494,7 @@ nav {
 }
 
 .sidebar a:hover {
-    color: var(--sky-accent);
+    color: var(--gold-accent);
 }
 
 .sidebar.open {
@@ -509,8 +509,70 @@ nav {
     .hamburger {
         display: flex;
     }
+}
 
-    .logo-full {
-        
-    }
+.sidebar-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+}
+
+.sidebar-top .arrow {
+    font-size: 1.2rem;
+    transition: transform 0.3s ease;
+}
+
+.arrow {
+    margin-right: 1rem;
+}
+
+.sidebar-dropdown {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition:
+        max-height 0.35s ease,
+        opacity 0.35s ease,
+        margin-top 0.35s ease,
+        transform 0.35s ease;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1rem;
+    margin-top: 0;
+}
+
+.sidebar-dropdown a {
+    padding: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.sidebar-dropdown.open {
+    max-height: 500px;
+    opacity: 1;
+    margin-top: 1rem;
+    transform: translateY(0);
+    display: flex;
+}
+
+.arrow.rotate {
+    transform: rotate(180deg);
+}
+
+.sidebar .join-us-sidebar {
+    color: var(--gold-accent) !important;
+}
+
+.join-us-sidebar:hover {
+    color: var(--wheat) !important;
+}
+
+#join-us-arrow {
+    color: var(--gold-accent);
 }

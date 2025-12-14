@@ -30,3 +30,13 @@ document.addEventListener("click", (e) => {
         hamburger.classList.toggle("active");
     }
 });
+
+document.querySelectorAll(".sidebar-top").forEach(top => {
+    top.addEventListener("click", () => {
+        const dropdown = top.nextElementSibling;
+        const arrow = top.querySelector(".arrow");
+
+        dropdown.classList.toggle("open");
+        arrow.classList.toggle("rotate");
+    });
+});
