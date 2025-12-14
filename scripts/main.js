@@ -2,14 +2,17 @@ window.addEventListener("scroll", () => {
     const header = document.querySelector(".header");
     const navLinks = document.querySelectorAll(".nav-a");
     const join = document.getElementById("join-us-button")
+    const nav_logo = document.getElementById("logo")
     if (window.scrollY > 50) {
         header.classList.add("scrolled");
         navLinks.forEach(link => link.classList.add("scrolled"));
         join.classList.add("scrolled");
+        nav_logo.src = "media/rcs-Photoroom.png"
     } else {
         header.classList.remove("scrolled");
         navLinks.forEach(link => link.classList.remove("scrolled"));
-        join.classList.add("scrolled");
+        join.classList.remove("scrolled");
+        nav_logo.src = "media/rcs (1)-Photoroom.png"
     }
 });
 

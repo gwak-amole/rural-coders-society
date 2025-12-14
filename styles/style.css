@@ -76,7 +76,7 @@ nav {
 }
 
 .nav-a:hover {
-    color: var(--sky-accent);
+    color: var(--gold-accent);
 }
 
 .nav-a.scrolled{
@@ -109,7 +109,7 @@ nav {
 }
 
 .dropbtn:hover {
-    color: var(--sky-accent);
+    color: var(--gold-accent);
 }
 
 .dropdown-content {
@@ -163,6 +163,11 @@ nav {
     padding: 0.5rem 1rem;
 }
 
+.logo-full {
+    max-width: 800px;
+    width: 100%;
+}
+
 .hero {
     border: none;
     text-align: left;
@@ -183,10 +188,10 @@ nav {
     
     background: radial-gradient(
         circle at 30% 40%,
-        rgba(0, 106, 255, 0.18),
+        rgba(12, 20, 40, 0.554),
         transparent 70%
     ),
-    linear-gradient(135deg, #0F2A43, #1C3550);
+    linear-gradient(135deg, var(--navy), var(--navy-light));
 }
 
 .hero::before {
@@ -477,6 +482,8 @@ nav {
     padding-left: 2rem;
     transition: right 0.35s ease;
     z-index: 999;
+
+    font-family: "Poppins", "sans-serif";
 }
 
 .sidebar a {
@@ -501,5 +508,9 @@ nav {
 
     .hamburger {
         display: flex;
+    }
+
+    .logo-full {
+        
     }
 }
