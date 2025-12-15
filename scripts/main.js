@@ -40,3 +40,35 @@ document.querySelectorAll(".sidebar-top").forEach(top => {
         arrow.classList.toggle("rotate");
     });
 });
+
+const track = document.getElementById("track");
+
+// Step 1: Clone ALL cards TWICE for smooth looping
+const cards = [...track.children];
+cards.forEach(card => track.appendChild(card.cloneNode(true)));
+cards.forEach(card => track.appendChild(card.cloneNode(true)));
+
+// Step 2: Measure total width of originals (including gap)
+let originalWidth = 0;
+cards.forEach(card => {
+    originalWidth += card.offsetWidth;
+    originalWidth += 48; // gap (3rem)
+});
+
+// Step 3: Animate
+let x = 0;
+const speed = 1;
+
+function animate() {
+    x += speed;
+
+    // Reset when we've shifted EXACTLY one original set
+    if (x >= originalWidth) {
+        x = 0;
+    }
+
+    track.style.transform = `translateX(${x * -1}px)`; 
+    requestAnimationFrame(animate);
+}
+
+animate();
