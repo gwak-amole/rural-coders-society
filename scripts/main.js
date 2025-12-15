@@ -8,11 +8,13 @@ window.addEventListener("scroll", () => {
         navLinks.forEach(link => link.classList.add("scrolled"));
         join.classList.add("scrolled");
         nav_logo.src = "../media/{rural coders society.} (3)-Photoroom.png"
+        nav_logo.classList.add("scrolled");
     } else {
         header.classList.remove("scrolled");
         navLinks.forEach(link => link.classList.remove("scrolled"));
         join.classList.remove("scrolled");
         nav_logo.src = "../media/{rural coders society.} (2)-Photoroom.png"
+        nav_logo.classList.remove("scrolled");
     }
 });
 
