@@ -236,6 +236,7 @@ nav {
     margin-left: auto;
     margin-right: auto;
     justify-self: center;
+    margin-top: -3rem;
 }
 
 .join-movement {
@@ -744,10 +745,6 @@ nav {
     color: var(--navy-light);
 }
 
-
-/* ============================
-   WHO SECTION
-============================ */
 .who {
     max-width: 1100px;
     margin: 6rem auto;
@@ -833,13 +830,19 @@ nav {
 .t-card {
     width: 260px;
     min-width: 260px;
+    height: 360px;
     padding: 2rem;
     background: var(--bg-light);
     border: 1px solid var(--navy-light);
     border-radius: 20px;
     text-align: center;
-    transition: transform 0.3s ease, opacity 0.3s ease;
+    transition: transform 0.3s ease, opacity 0.3s ease, box-shadow 0.3s ease;
     opacity: 1;
+}
+
+.t-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 
 .testimonial-carousel::before,
@@ -861,4 +864,79 @@ nav {
 .testimonial-carousel::after {
     right: 0;
     background: linear-gradient(to left, var(--bg-light), transparent);
+}
+
+.impact {
+    padding: 3rem;
+    font-size: 2rem;
+    text-align: center;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.impact h2{
+    font-family: "Poppins", sans-serif;
+}
+
+.impact-stats {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    text-align: center;
+    justify-content: center;
+    gap: 4rem;
+    align-content: center;
+    
+}
+
+.impact-item {
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--navy);
+    color: var(--gold-accent);
+    max-width: 14rem;
+    border: 3px solid var(--bg-light);
+    border-radius: 45px;
+    padding: 1rem 3rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: "Poppins", sans-serif;
+    gap: 0.6rem;
+}
+
+.impact-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.impact-item h3 {
+    font-size: 3rem;
+    margin: 0;
+    padding-top: 1.3rem;
+}
+
+.impact-item p {
+    font-size: 1.2rem;
+}
+
+#members::after {
+    content: "+";
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+#money::before {
+    content: "$";
+    font-weight: 600;
+    margin-left: 2px;
+}
+
+#members::after,
+#money::before {
+    display: inline-block;
+    line-height: 0;
 }
