@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         counters.forEach(counter => {
             const target = +counter.dataset.target;
             let count = 0;
-            const increment = target / 35;
+            const increment = target / 25;
 
             function update() {
                 count += increment;
