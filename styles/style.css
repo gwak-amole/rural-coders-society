@@ -265,8 +265,24 @@ nav {
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
+#request-button {
+    width: 200px;
+    height: auto;
+    padding: 1rem 1rem;
+    margin: 1.4rem 0;
+
+    font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+
+    border: 5px solid var(--gold-accent);
+    border-radius: 15px;
+
+    transition: transform 0.3s ease, border-color 0.3s ease;
+}
+
 #hero-button:hover,
-#mission-button:hover {
+#mission-button:hover,
+#request-button:hover {
     transform: translateY(-5px);
     border-color: var(--wheat);
     cursor: pointer;
@@ -355,11 +371,19 @@ nav {
     transition: transform 0.5s ease, background-color 0.5s ease;
 }
 
+#request-website {
+    background-color: var(--navy);
+    padding: 3rem 2.4rem;
+}
+
 #hows {
     padding-top: 2rem;
+    padding-bottom: 6rem;
+    background-color: var(--blue);
 }
 
 #hows h1{
+    color: var(--bg-light);
     font-weight: 650;
     font-size: 3rem;
     font-family: "Poppins", sans-serif;
@@ -383,6 +407,7 @@ nav {
 }
 
 .hows-div {
+    background-color: var(--bg-light);
     width: 18rem;
     text-align: center;
     border: 1px solid var(--navy-light);
