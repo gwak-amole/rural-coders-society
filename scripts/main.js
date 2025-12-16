@@ -80,7 +80,7 @@ document.addEventListener("DOMContentLoaded", () => {
         counters.forEach(counter => {
             const target = +counter.dataset.target;
             let count = 0;
-            const increment = target / 25;
+            const increment = target / 35;
 
             function update() {
                 count += increment;
@@ -104,3 +104,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
     observer.observe(impactSection);
 });
+
+function scrollToSection(id) {
+    const element = document.getElementById(id);
+    const headerOffset = 80;
+    const elementPosition = element.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.scrollY - headerOffset;
+
+    window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth"
+    });
+}
+
+window.addEventListener("load", () => {
+    document.querySelector(".hero").classList.add("hero-loaded");
+})

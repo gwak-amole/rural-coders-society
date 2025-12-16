@@ -234,7 +234,23 @@ nav {
     margin: 0;
 }
 
-#hero-button {
+.hero-title,
+.hero-subtitle,
+#hero-button-wrapper {
+    transform: translateY(10px);
+    opacity: 0.5;
+    transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.hero.hero-loaded .hero-title,
+.hero.hero-loaded .hero-subtitle,
+.hero.hero-loaded #hero-button-wrapper {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+#hero-button,
+#mission-button {
     width: 150px;
     height: auto;
     padding: 1rem 1rem;
@@ -249,7 +265,8 @@ nav {
     transition: transform 0.3s ease, border-color 0.3s ease;
 }
 
-#hero-button:hover {
+#hero-button:hover,
+#mission-button:hover {
     transform: translateY(-5px);
     border-color: var(--wheat);
     cursor: pointer;
@@ -321,7 +338,7 @@ nav {
 
 .mission-container {
     background-color: var(--blue);
-    padding: 8rem 2.4rem;
+    padding: 6rem 2.4rem;
     color: var(--text-light);
     font-family: "Poppins", sans-serif;
     font-size: 1.8rem;
@@ -338,15 +355,27 @@ nav {
     transition: transform 0.5s ease, background-color 0.5s ease;
 }
 
+#hows {
+    padding-top: 2rem;
+}
+
+#hows h1{
+    font-weight: 650;
+    font-size: 3rem;
+    font-family: "Poppins", sans-serif;
+    text-align: center;
+}
+
 .hows {
-    margin-top: 30px;
+    margin-top: 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 
     gap: 40px;
 
-    padding: 2rem 0;
+    padding-left: 2rem;
+    padding-right: 2rem;
     max-width: 1200px;
     margin-inline: auto;
     width: 100%;
@@ -901,6 +930,8 @@ nav {
     justify-content: center;
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 3rem;
+    margin-top: -1rem;
 }
 
 .impact h2{
