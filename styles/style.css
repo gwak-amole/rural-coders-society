@@ -1085,7 +1085,7 @@ nav {
 
 @media (max-width: 768px) {
     .hero-title {
-        font-size: 1.8rem;
+        font-size: 2rem;
         padding: 2rem 1.5rem;
         text-align: center;
         padding-left: 0;
@@ -1128,6 +1128,9 @@ nav {
     .operations-div button {
         width: 100%;
     }
+    .footer-head {
+        text-align: center;
+    }
     .footer {
         text-align: center;
         align-items: center;
@@ -1137,7 +1140,7 @@ nav {
         width: 100%;
         padding: 0.8rem;
     }
-    .logo {
+    .logo, .logo.scrolled {
         height: 2.5rem;
         margin-right: 0.5rem;
     }
