@@ -23,11 +23,28 @@
 body {
     background-color: var(--bg-light);
     color: var(--navy);
-
     font-family: "Inter", sans-serif;
-
     margin: 0;
     padding: 0;
+
+    /* Completely disable scrollbar space */
+    scrollbar-width: none; 
+    -ms-overflow-style: none;
+    
+    /* Remove any reserved gutter space */
+    scrollbar-gutter: auto; 
+    
+    /* Strict containment */
+    overflow-x: hidden; 
+    width: 100%;
+    position: relative;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+    width: 0 !important;
+    height: 0 !important;
+    background: 0px;
 }
 
 .site-header-container {
@@ -53,7 +70,6 @@ body {
 .header.scrolled {
     background-color: rgba(250, 250, 250, 0.71);
     backdrop-filter: blur(10px);
-    padding-left: -2px;
 }
 
 nav {
@@ -585,7 +601,7 @@ nav {
 .sidebar {
     position: fixed;
     top: 0;
-    right: -280px;
+    right: -300px;
     width: 260px;
     height: 100%;
     background: var(--navy);
@@ -1084,11 +1100,13 @@ nav {
 }
 
 @media (max-width: 768px) {
+    .hero {
+        align-items: center;
+    }
     .hero-title {
-        font-size: 2rem;
+        font-size: 2.4rem;
         padding: 2rem 1.5rem;
         text-align: center;
-        padding-left: 0;
     }
     .hero-subtitle {
         font-size: 1.1rem;
@@ -1129,12 +1147,14 @@ nav {
         width: 100%;
     }
     .footer-head {
-        text-align: center;
+        text-align: left;
     }
     .footer {
-        text-align: center;
-        align-items: center;
-        padding: 1rem;
+        text-align: left;
+        padding-left: 3rem;
+    }
+    .footer-left {
+        margin-left: 0;
     }
     .form input[type=text], input[type=email], textarea {
         width: 100%;
