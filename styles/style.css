@@ -1164,6 +1164,12 @@ nav {
     }
     .form input[type=submit] {
         font-size: 0.8rem;
+        color: var(--navy);
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    
+        background-color: var(--bg-light);
     }
     .logo, .logo.scrolled {
         height: 2.5rem;
