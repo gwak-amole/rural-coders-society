@@ -1079,7 +1079,7 @@ nav {
 
     font-family: "Poppins", sans-serif;
 
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, font-size 0.3s ease;
 }
 
 .form input[type=submit]:hover {
@@ -1141,6 +1141,8 @@ nav {
         padding: 1rem;
     }
     .operations-div {
+        display: flex;
+        flex-direction: row;
         padding: 2rem 1.5rem;
     }
     .operations-div button {
@@ -1160,11 +1162,17 @@ nav {
         width: 100%;
         padding: 0.8rem;
     }
+    .form input[type=submit] {
+        font-size: 0.8rem;
+    }
     .logo, .logo.scrolled {
         height: 2.5rem;
         margin-right: 0.5rem;
     }
     .sidebar a {
         font-size: 1.2rem;
+    }
+    .operations-div {
+        flex-direction: column;
     }
 }
